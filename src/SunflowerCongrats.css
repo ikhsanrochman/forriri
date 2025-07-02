@@ -43,7 +43,7 @@
   font-size: 1.2rem;
   box-shadow: 0 4px 24px rgba(255, 224, 102, 0.15);
   margin-top: 12px;
-  text-align: left;
+  text-align: center;
   z-index: 1;
 }
 
@@ -173,7 +173,7 @@
   .sunflower-message {
     padding: 16px 8px;
     font-size: 1rem;
-    text-align: left;
+    text-align: center;
   }
   .sunflower-emoji {
     font-size: 3.5rem;
