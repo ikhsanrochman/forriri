@@ -1,0 +1,86 @@
+.passcode-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fffbe7 0%, #ffe066 100%);
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  padding: 24px;
+}
+
+h2 {
+  margin-bottom: 24px;
+  color: #bfa13a;
+  font-size: 1.6rem;
+}
+
+.passcode-dots {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #bfa13a;
+  background: #fffbe7;
+  transition: background 0.2s;
+}
+.filled {
+  background: #ffe066;
+  border-color: #f9d923;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 64px);
+  grid-gap: 16px;
+  margin-bottom: 18px;
+}
+.keypad-btn {
+  width: 64px;
+  height: 64px;
+  font-size: 2rem;
+  border-radius: 50%;
+  border: none;
+  background: #fffbe7;
+  color: #bfa13a;
+  box-shadow: 0 2px 8px rgba(255, 224, 102, 0.12);
+  transition: background 0.2s, transform 0.1s;
+  cursor: pointer;
+  font-weight: bold;
+}
+.keypad-btn:active {
+  background: #ffe066;
+  transform: scale(0.95);
+}
+.keypad-btn:disabled {
+  background: #eee;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.passcode-error {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .keypad {
+    grid-template-columns: repeat(3, 48px);
+    grid-gap: 10px;
+  }
+  .keypad-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+} 
