@@ -12,19 +12,20 @@
 h2 {
   margin-bottom: 24px;
   color: #bfa13a;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
 }
 
 .passcode-dots {
   display: flex;
-  gap: 16px;
-  margin-bottom: 28px;
+  gap: 24px;
+  margin-bottom: 32px;
 }
 .dot {
-  width: 18px;
-  height: 18px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  border: 2px solid #bfa13a;
+  border: 3px solid #bfa13a;
   background: #fffbe7;
   transition: background 0.2s;
 }
@@ -35,14 +36,14 @@ h2 {
 
 .keypad {
   display: grid;
-  grid-template-columns: repeat(3, 64px);
-  grid-gap: 16px;
+  grid-template-columns: repeat(3, 88px);
+  grid-gap: 24px;
   margin-bottom: 18px;
 }
 .keypad-btn {
-  width: 64px;
-  height: 64px;
-  font-size: 2rem;
+  width: 88px;
+  height: 88px;
+  font-size: 2.8rem;
   border-radius: 50%;
   border: none;
   background: #fffbe7;
@@ -65,22 +66,28 @@ h2 {
 .passcode-error {
   color: #e74c3c;
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 @media (max-width: 600px) {
   .keypad {
-    grid-template-columns: repeat(3, 48px);
-    grid-gap: 10px;
+    grid-template-columns: repeat(3, 64px);
+    grid-gap: 14px;
   }
   .keypad-btn {
-    width: 48px;
-    height: 48px;
-    font-size: 1.3rem;
+    width: 64px;
+    height: 64px;
+    font-size: 2rem;
   }
   .dot {
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .passcode-error {
+    font-size: 1rem;
   }
 } 
