@@ -122,7 +122,7 @@ const SunflowerCongrats = () => {
       <div className="sunflower-corner sunflower-corner-bl">{sunflowerSmall}</div>
       <div className="sunflower-corner sunflower-corner-br">{sunflowerSmall}</div>
       <div className="sunflower-emoji sunflower-emoji-big">🌻</div>
-      <h1>Congratulations, Riri! 🎉</h1>
+      <h1 style={{ textAlign: 'center' }}>Congratulations, Riri! 🎉</h1>
       <p className="sunflower-message">{bunga.message}</p>
       <div className="sunflower-quote">Like a sunflower, always turn towards the light and keep growing.</div>
       {selected === 2 && (

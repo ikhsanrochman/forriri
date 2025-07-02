@@ -75,11 +75,7 @@
   padding: 12px 24px;
   box-shadow: 0 2px 12px rgba(255, 224, 102, 0.08);
   z-index: 1;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
 }
 .next-quote-btn {
   background: #ffe066;
@@ -181,6 +177,7 @@
   .sunflower-quote {
     font-size: 0.95rem;
     padding: 8px 10px;
+    text-align: center;
   }
   .sunflower-corner {
     font-size: 1.3rem;
